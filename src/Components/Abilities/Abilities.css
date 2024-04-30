@@ -1,0 +1,92 @@
+.abilities{
+    height: 100vh;
+    max-height: 200vh;
+    background: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abilities h1{
+    color: var(--color1);
+    text-shadow: var(--text-shadow);
+    font-size: var(--font-size4);
+    margin-top: 20px;
+}
+
+
+.abilites-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.ability-card{
+    position: relative;
+    text-align: center;
+    background-color: #212121;
+    width: 10rem;
+    aspect-ratio: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 2.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: var(--color1);
+    font-size: var(--font-size2);
+    font-weight: 100;
+}
+
+.ability-card:hover{
+    width: 12rem;
+}
+
+.ability-card p{
+    margin-bottom: 5px;
+}
+
+.ability-card:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    background-image: linear-gradient(90deg, #07e216 0%, #005414 92.32%);
+    bottom: -0.1rem;
+    left: 0;
+}
+
+.ability-card img{
+    width: 60%;
+
+}
+
+
+
+@media only screen and (max-width: 890px){
+    .abilities{
+        height: 80vh;
+    }
+    .ability-card{
+        width: 7rem;
+    }
+    .ability-card:hover{
+        width: 8rem;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    .abilities{
+        height: 110vh;
+    }
+    .abilites-container{
+        grid-template-columns: repeat(2,auto);
+    }
+}

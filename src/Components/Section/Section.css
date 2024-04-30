@@ -1,0 +1,200 @@
+.me-section{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-third);
+}
+.spin-img {
+    width: 70%;
+    margin-left: 150px; 
+    background-color: transparent;
+    border: 0;
+    animation: spin 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    filter: drop-shadow(0 0 80px rgba(0, 177, 25, 0.5));
+    transform-style: preserve-3d;
+    perspective: 1000px; 
+}
+
+@keyframes spin {
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+
+}
+
+.me-main{
+    width: 100%;
+    height: 100vh;
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.me-name{
+    font-size: var(--font-size3);
+}
+
+.me-profession{
+    font-size: var(--font-size4);
+    color: var(--color2);
+    text-shadow: var(--text-shadow);
+    font-weight: 200;
+    position: relative;
+}
+
+.me-profession::after {
+    content: "|";
+    font-size: var(--font-size4);
+    opacity: 1;
+    position: absolute;
+    width: 10px;
+    text-shadow: var(--text-shadow);
+    left: 0;
+    transform: translateX(-50%);
+    animation: cursor 1.8s steps(20) forwards, fadeInOut 0.8s infinite;
+}
+
+@keyframes cursor {
+    0%, 50% {
+        right: calc(100% + 10px); 
+    }
+    100%{
+        left: 85%;
+    }
+}
+
+@keyframes fadeInOut{
+    to{
+        opacity: 0;
+    }
+}
+
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.social-media .cv{
+    border: 0;
+    border-radius: 5px;
+    font-size: var(--font-size2);
+    font-weight: 200;
+    color: var(--color1);
+    text-shadow: var(--text-shadow);
+    background: var(--bg-primary);
+    box-shadow: 0 2px 5px rgba(255,255,255,0.5);
+    padding: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.social-media .cv:hover{
+    letter-spacing: 2px;
+    color: var(--color2);
+    box-shadow: 0 2px 5px rgba(0,177,25,0.5);
+}
+
+.social-media a{
+    background: var(--bg-primary);
+    height: 40px;
+    width: 40px;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.5);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    pointer-events: auto;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+}
+.social-media svg {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    transition: fill 0.5s ease;
+    cursor: pointer;
+}
+
+.social-media a svg:hover path,
+.social-media a svg:hover polygon,
+.social-media a svg:hover circle,
+.social-media a svg:hover rect {
+    animation: colorChange 2s infinite alternate forwards linear; /* You can adjust the duration and other properties */
+}
+
+@keyframes colorChange {
+    0% {
+        fill: rgba(5, 211, 32, 0.2);
+    }
+    100% {
+        fill: rgb(0, 255, 34);
+    }
+}
+
+.social-media a:hover{
+    box-shadow: 0 2px 5px rgba(0,177,25,0.5);
+}
+
+@media only screen and (max-width: 890px){
+    .me-container{
+       margin: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+    }
+
+    .me-section img{
+        display: none;
+    }
+
+    .me-profession::after{
+        animation: cursor2 2s steps(20) forwards, fadeInOut 0.8s infinite;
+    }
+
+    @keyframes cursor2 {
+        0%, 50% {
+            right: calc(100% + 10px); 
+        }
+        100%{
+            left: 102%;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .me-container {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .me-section img {
+        display: none;
+    }
+
+    .me-profession::after {
+        animation: cursor2 2s steps(20) forwards, fadeInOut 0.8s infinite;
+    }
+
+    @keyframes cursor2 {
+        0%, 50% {
+            right: calc(100% + 10px);
+        }
+        100% {
+            left: 102%;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--bg-secondary);
+    height: 70vh;
+}
+
+.title-about{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.title-about h2{
+    color: var(--color1);
+    font-size: var(--font-size4);
+    font-weight: 400;
+    text-shadow: var(--text-shadow);
+    margin-bottom: 20px;
+}
+
+.sphere {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(2, 91, 8);
+    box-shadow: 0 0 20px rgb(0, 255, 17);
+    margin-bottom: 20px;
+}
+
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.about-container img{
+  width: 280px;   
+  margin-left: 50px;
+  margin-bottom: 40px;
+  filter: drop-shadow(0 0 20px rgba(0,177,25,0.5)); 
+  animation: move 2s ease-in-out infinite;
+}
+
+
+.about-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    color: var(--color1);
+    margin-right: 50px;
+}
+
+.about-text {
+    font-size: var(--font-size2);
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+
+
+
+ 
+@media only screen and (max-width: 890px){
+
+    .title-about h2{
+        animation: move 2s ease-in-out infinite;
+    }
+
+    .sphere{
+        animation: move 2s ease-in-out infinite;
+    }
+
+.about-container img{
+    display: none;
+}
+    .about-text{
+    font-size: var(--font-size1);
+    letter-spacing: 1px;
+} 
+
+.about-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    color: var(--color1);
+}
+}

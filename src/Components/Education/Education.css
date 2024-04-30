@@ -1,0 +1,162 @@
+
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-forth);
+    height: 70vh;
+}
+
+.education h1{
+    text-shadow: var(--text-shadow);
+    color: var(--color1);
+    font-size: var(--font-size5);
+    margin-bottom: 50px;
+}
+
+.edc-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.edc-container button{
+    margin: 50px;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-radius: 50%;
+    opacity: 0.8;
+    background: var(--bg-secondary);
+    font-size: var(--font-size4);
+    color: var(--color1);
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+.edc-container button:hover{
+    width: 70px;
+    height: 70px;
+}
+
+  
+  .card {
+    width: 250px;
+    height: 300px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px rgb(0, 72, 10);
+    transition: box-shadow 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .card.prev {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .card.next {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  .card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-title h2{
+    font-size: var(--font-size5);
+    margin: 50px;
+    text-align: center;
+    color: var(--color2);
+    font-weight: 100;
+  }
+
+ 
+  .card ul {
+    list-style: none;
+    margin-bottom: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }  
+  .card:hover ul {
+    opacity: 0.7;
+  }
+  
+
+.card p{
+    color: var(--color1);
+    font-size: var(--font-size1);
+    opacity: 0.8;
+}
+
+.card p span{
+  font-weight: bold;
+}
+
+
+.card-balls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc; 
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.card-ball.active {
+  background-color: green; 
+}
+
+
+ li .edc-title{
+    color: var(--color2);
+}
+
+@media only screen and (max-width: 480px) {
+    .edc-container button{
+        margin: 20px;
+        width: 35px;
+        height: 35px;
+    }
+    .edc-container button:hover{
+        width: 40px;
+        height: 40px;
+    }
+    .card{
+        width: 270px;
+    }
+
+    .card li p{
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+    .edc-container button{
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
