@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import portfolioImg from '../../assets/projectsImgs/portfolioImg.png';
 import youtubeImg from '../../assets/projectsImgs/youtube.png';
 import pokedexImg from '../../assets/projectsImgs/pokedex.png';
+import undefinedImg from '../../assets/projectsImgs/undefined.png';
 import react_icon from '../../assets/techs/react_icon.svg';
 import css_icon from '../../assets/techs/css_icon.svg';
 import typescript_icon from '../../assets/techs/typescript.svg';
@@ -78,7 +79,7 @@ const Projects = () => {
     </ul>
     <div className="links">
         <a href="https://github.com/Ga5000/YouTube-Clone" target="_blank"><img src={github_icon} alt="GitHub" /></a>
-        <a href="https://gabrielyoutube-clone.netlify.app/" target="_blank"> <img src={website_icon} alt="" /></a>
+        <a href="https://gabr5000youtubeclone.netlify.app/" target="_blank"> <img src={website_icon} alt="" /></a>
     </div>
 </div>
                     <div className="details">
@@ -115,6 +116,32 @@ const Projects = () => {
                         <button className="see-more" onClick={() => flip(2)}>{flipped[2] ? "voltar" : "ver mais"}</button>
                     </div>
                    
+                </div>
+                <div className={`project ${flipped[3] ? "flip" : "unflip"}`}>
+                    <img className='project-img' src={undefinedImg} alt="" />
+                    <div className="techs">
+                        <h3>???</h3>
+                        <div className="used-techs">
+                            <img src={react_icon} alt="" />
+                            <img src={css_icon} alt="" />
+                            <img src={api_icon} alt="" />
+                        </div>
+                    </div>
+
+                    <div className="desc">
+                           
+                              <div className="links">
+                                   <a href="" target="_blank"> <img src={github_icon} alt="" /></a>
+                                   <a href=""> <img src={website_icon} alt="" /></a>                              
+                                   </div>
+                         
+                    </div>
+                    
+                    <div className="details">
+                        <p className='status'>Em Desenvolvimento</p>
+                        <button className="see-more" onClick={() => flip(3)}>{flipped[3] ? "voltar" : "ver mais"}</button>
+                    </div>
+                    
                 </div>
             </div>
         </section>
