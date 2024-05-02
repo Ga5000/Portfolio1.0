@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import portfolioImg from '../../assets/projectsImgs/portfolioImg.png';
 import youtubeImg from '../../assets/projectsImgs/youtube.png';
 import pokedexImg from '../../assets/projectsImgs/pokedex.png';
-import undefinedImg from '../../assets/projectsImgs/undefined.png';
+import undefinedImg from '../../assets/projectsImgs/indefinido.png';
 import react_icon from '../../assets/techs/react_icon.svg';
 import css_icon from '../../assets/techs/css_icon.svg';
 import typescript_icon from '../../assets/techs/typescript.svg';
