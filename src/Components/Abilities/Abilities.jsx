@@ -7,6 +7,8 @@ import react from '../../assets/techs/react_icon.svg';
 import api_icon from '../../assets/techs/api_icon.svg';
 import git_icon from '../../assets/techs/git_icon.svg';
 import typescript_icon from '../../assets/techs/typescript.svg';
+import java_icon from '../../assets/techs/java_icon.svg';
+import tailwind_icon from '../../assets/techs/tailwind_icon.svg';
 
 const Abilities = () => {
   return (
@@ -40,6 +42,14 @@ const Abilities = () => {
               <div className="ability-card">
                 <p>Typescript</p>
                 <img src={typescript_icon} alt="" />
+              </div>
+              <div className="ability-card">
+                <p>Tailwind</p>
+                <img src={tailwind_icon} alt="" />
+              </div>
+              <div className="ability-card">
+                <p>Java</p>
+                <img src={java_icon} alt="" />
               </div>
         </div>
    </section>

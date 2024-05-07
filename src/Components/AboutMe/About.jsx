@@ -16,7 +16,7 @@ const About = () => {
             <p className='about-text'>Meu nome é Gabriel Lisboa, sou apaixonado por tecnologia e escolhi trilhar o caminho da programação. 
         Busco oportunidades para aprimorar minha abilidades e contribuir para a comunidade de desenvolvimento web.</p>
          <br />
-        <p className='about-text'>Atualmente sou estudante de Ciência da Computação e estou focando no desenvolvimento Front-End.</p>
+        <p className='about-text'>Atualmente sou estudante de Ciência da Computação e estou focando no desenvolvimento Full-Stack.</p>
             </div>
             </div>
    </section>

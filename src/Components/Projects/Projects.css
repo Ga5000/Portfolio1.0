@@ -1,6 +1,6 @@
 .projects{
     background: var(--bg--fifth);
-    height: 140vh;
+    height: 120vh;
     max-height: 400vh;
     display: flex;
     flex-direction: column;
@@ -290,62 +290,81 @@
 
 
 @media only screen and (max-width: 890px) {
-    .projects{
-        height: 120vh;
+    .projects {
+        height: 190vh;
     }
-    .project-container{
+    .project-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-right: 0;
     }
-}
-
-
-@media only screen and (max-width: 480px) {
-    .projects{
-        height: 120vh;
-    }
-    .project-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-right: 0;
-    }
-
-    .project-img{
+    .project-img {
         width: 400px;
     }
-
-    .project:hover .project-img:hover{
+    .project:hover .project-img:hover {
         width: 420px;
         opacity: 1;
     }
-
-    .details{
+    .details {
         font-size: var(--font-size2);
     }
-
-    .details button{
+    .details button {
         padding: 0;
         margin-right: 30px;
     }
-
     .project:hover .details {
         display: flex;
         height: 25px;
         transform: translateY(-100%);
     }
-
-
-    .project.flip .desc {
-        width: 400px; 
-        height: 250px; 
-        font-size: var(--font-size1); 
+    .project.flip .details {
+        font-size: var(--font-size2); /* Added */
     }
+    .project.flip .desc {
+        width: 400px;
+        height: 250px;
+        font-size: var(--font-size1);
+    }
+}
 
-   
-
+@media only screen and (max-width: 480px) {
+    .projects {
+        height: 190vh;
+    }
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .project-img {
+        width: 400px;
+    }
+    .project:hover .project-img:hover {
+        width: 420px;
+        opacity: 1;
+    }
+    .details {
+        font-size: var(--font-size2);
+    }
+    .details button {
+        padding: 0;
+        margin-right: 30px;
+    }
+    .project:hover .details {
+        display: flex;
+        height: 25px;
+        transform: translateY(-100%);
+    }
+    .project.flip .details {
+        font-size: var(--font-size2); /* Added */
+    }
+    .project.flip .desc {
+        width: 400px;
+        height: 250px;
+        font-size: var(--font-size1);
+    }
 }

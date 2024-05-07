@@ -1,6 +1,6 @@
 .abilities{
-    height: 100vh;
-    max-height: 200vh;
+    height: 120vh;
+    max-height: 300vh;
     background: var(--bg-secondary);
     display: flex;
     flex-direction: column;
@@ -71,20 +71,26 @@
 
 @media only screen and (max-width: 890px){
     .abilities{
-        height: 80vh;
+        height: 120vh;
     }
     .ability-card{
-        width: 7rem;
+        width: 5.5rem;
+    }
+    .ability-card p{
+        font-size: 0.8rem;
     }
     .ability-card:hover{
-        width: 8rem;
+        width: 6.5rem;
     }
 }
 
 
 @media only screen and (max-width: 480px){
     .abilities{
-        height: 110vh;
+        height: 120vh;
+    }
+    .ability-card{
+        width: 5rem;
     }
     .abilites-container{
         grid-template-columns: repeat(2,auto);

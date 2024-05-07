@@ -7,6 +7,7 @@ import react_icon from '../../assets/techs/react_icon.svg';
 import css_icon from '../../assets/techs/css_icon.svg';
 import typescript_icon from '../../assets/techs/typescript.svg';
 import api_icon from '../../assets/techs/api_icon.svg';
+import tailwind_icon from '../../assets/techs/tailwind_icon.svg';
 import github_icon from '../../assets/projectsSvgs/github_icon.svg';
 import website_icon from '../../assets/projectsSvgs/website_icon.svg';
 import './Projects.css';
@@ -123,8 +124,7 @@ const Projects = () => {
                         <h3>???</h3>
                         <div className="used-techs">
                             <img src={react_icon} alt="" />
-                            <img src={css_icon} alt="" />
-                            <img src={api_icon} alt="" />
+                            <img src={tailwind_icon} alt="" />
                         </div>
                     </div>
 
